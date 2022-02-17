@@ -35,3 +35,5 @@ const filmesEmJson = JSON.stringify(filmes)
 app.get('/filmes', (req, res) => {
   res.send(filmesEmJson)
 })
+
+app.listen(3001, () => console.log('A api está rodando'))
